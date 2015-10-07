@@ -3,7 +3,6 @@ Apache Cordova/PhoneGap plugin for the Uber app.
 
 This plugin provides a service for deep linking with the
 Uber app from a convenient, easy to use JavaScript interface.
->We also recommend using this plugin in conjunction with our [angular module] (https://github.com/bradenericson/Uber-Angular-Module)
 
 ## how to install
 ```
@@ -66,9 +65,3 @@ For detailed information about these fields, see the [Uber developers website]
 
 **toNickname**
 > Nickname of dropoff location
-
-
-
-## coming soon
-
-* Redirect to [m.uber.com] (https://m.uber.com/) when the mobile app isn't found on the users device.

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin id="com.jabb.plugin.uber" version="0.2.5">
+<plugin id="ca.kloppmagic.plugin.uber" version="0.2.5">
     <name>Uber Cordova</name>
     <description>Cordova Uber Plugin</description>
     <license>Apache 2.0</license>
     <keywords>uber,test</keywords>
-    <repo>https://github.com/bradenericson/Uber-Cordova-Plugin.git</repo>
+    <repo>https://github.com/kloppster/Uber-Cordova-Plugin.git</repo>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Uber">
-                <param name="android-package" value="com.jabb.plugin.uber.Uber" />
+                <param name="android-package" value="ca.kloppmagic.plugin.uber.Uber" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -22,8 +22,8 @@
 		<data android:scheme="uber" />
     </intent-filter>
 	</config-file>
-        <source-file src="src/android/Uber.java" target-dir="src/com/jabb/plugin/uber" />
-	<source-file src="src/android/UberUtils.java" target-dir="src/com/jabb/plugin/uber" />
+        <source-file src="src/android/Uber.java" target-dir="src/ca.kloppmagic.plugin/uber" />
+	<source-file src="src/android/UberUtils.java" target-dir="src/ca.kloppmagic.plugin/uber" />
         <js-module src="uber.js" name="uber">
             <runs />
         </js-module>
@@ -35,6 +35,12 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+          <array>
+            <string>uber</string>
+          </array>
+        </config-file>
+
         <header-file src="src/ios/Uber.h" target-dir="Uber" />
         <source-file src="src/ios/Uber.m" target-dir="Uber" />
         
