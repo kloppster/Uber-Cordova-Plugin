@@ -32,7 +32,7 @@
 			queryString = [NSString stringWithFormat:@"https://m.uber.com/sign-up"];
 		}
 
-		queryString = [NSString stringWIthFormat:@"%@?action=setPickup&dropoff[latitude]=%@&dropoff[longitude]=%@", 
+		queryString = [NSString stringWithFormat:@"%@?action=setPickup&dropoff[latitude]=%@&dropoff[longitude]=%@", 
 								 queryString,
 								 toLatitude,
 								 toLongitude];
