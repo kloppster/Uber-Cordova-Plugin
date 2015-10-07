@@ -82,6 +82,8 @@
 		
 		NSString *encodedString = [queryString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 		
+		NSLog(@"Uber handle url: %@", encodedString);
+
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:encodedString]];
 	
 	   if (payloadDictionary != nil) {
