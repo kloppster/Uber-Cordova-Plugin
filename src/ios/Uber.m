@@ -23,12 +23,13 @@
 		NSString *toAddress = payloadDictionary[@"toAddress"];
 		NSString *fromNickname = payloadDictionary[@"fromNickname"];
 		NSString *toNickname = payloadDictionary[@"toNickname"];
+		NSString *queryString = [NSString stringWithFormat:@""]
 		
 		if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"uber://"]]) {
-			NSString *queryString = [NSString stringWithFormat:@"uber://"]
+			queryString = [NSString stringWithFormat:@"uber://"]
 		}
 		else {
-			NSString *queryString = [NSString stringWithFormat:@"https://m.uber.com/sign-up"]
+			queryString = [NSString stringWithFormat:@"https://m.uber.com/sign-up"]
 		}
 
 		queryString = [NSString stringWIthFormat:@"%@?action=setPickup&dropoff[latitude]=%@&dropoff[longitude]=%@", 
