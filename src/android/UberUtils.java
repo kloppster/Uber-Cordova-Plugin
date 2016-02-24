@@ -1,4 +1,4 @@
-package com.jabb.plugin.uber;
+package ca.kloppmagic.plugin.uber;
 
 import java.io.UnsupportedEncodingException;
 import java.lang.StringBuilder;

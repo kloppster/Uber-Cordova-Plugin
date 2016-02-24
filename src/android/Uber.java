@@ -1,4 +1,4 @@
-package com.jabb.plugin.uber;
+package ca.kloppmagic.plugin.uber;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
